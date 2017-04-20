@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputType>Library</OutputType>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputTypeEx>library</OutputTypeEx>
+    <StartupObject />
+    <Authors>Andrew McCaughan</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Log4NetProvider.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="1.1.0" />
+  </ItemGroup>
+
+</Project>
